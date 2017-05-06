@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+	   
+	     <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>NFCC | Login</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sl-slide.css">
+
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	   
+  </head>
+  <body>
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a id="logo" class="pull-left" href="index.html"></a>
+        <div class="nav-collapse collapse pull-right">
+          <ul class="nav">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about-us.php">About Us</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<i class="icon-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="login.php">Login</a></li>
+                <li class="active"><a href="registration.php">Registration</a></li>
+                <li class="divider"></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pricing.html">Pricing</a></li>	
+                <li class="divider"></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+              </ul>
+            </li>
+           <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Registrations</a></li>
+            <li class="login">
+              <a href="logout.php"><i class="icon-lock"></i></a>
+            </li>
+          </ul>        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+    <section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h1>About Us</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+                        <li class="active">About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .title -->   
+
+    <section id="about-us" class="container main">
+	
+	<div class="container">
+			<div class="page-header" id="banner">
+				<div > 
+				<div class="container">
+			<div class="page-header" id="banner">
+			
+				<div >
+				
+					<div class="well bs-component">
+					 <div> 
+		   
+<div  style="background-image:url(images/card1.png); height:300px; width:1000px; margin-left:50px;"  >
+	 
+	 <form class="form-horizontal" onsubmit="return verify1();" id="infoForm1" method="POST" >
+  <fieldset>
+ <br><br><br><br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$FetchUser['FullName'];?></h2>
+			<br><br><h4 style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$FetchUser['Mobile'];?></h4>
+			<h4 style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$FetchUser['Email'];?></h4>
+</form>	 
+</div>
+</div>
+	 
+						<form onsubmit="return verify2();" id="infoForm2" method="POST" >						
+						<fieldset>					
+						
+						
+						
+
+	
+	
+	
+															
+     
+		
+
+	
+	
+	
+	    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+	  <input type="hidden" value="<?=$_SESSION['UserId'];?>"  name="uid"/>
+	  <input type="hidden" value="placeorder" name="formtype"/>
+        <button  type="submit" href="orderpage.php" class="btn btn-primary btn-large"  onclick="return confirm('CONGO..!!!! Order Placed, Please Update Your Account Now.!!!');"Style="position:fixed;" width:"100%;">Place Your Order [ Rs<?=$Fetchrate['productsellingprice'];?> ] </button>
+		<br><br><div id="show2" style="color:red; font-weight:bold;"></div>
+		
+		
+		
+		
+		
+      </div>
+    </div>
+	  </fieldset>
+</form>	 
+</div>
+	
+
+	</div> 
+</div><!-- this is the div endinf for forst row-->
+	
+	
+	
+
+
+
+		        
+      
+
+        <div class="row-fluid">
+            <div class="span6">
+                <h3>Why Choose Us?</h3>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+            </div>
+            <div class="span6">
+                <h3>Our Services</h3>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                      <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                          Professional Web Design
+                      </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                     <legend><hr>Shipping <strong>Details</strong> <hr></legend>
+					
+							<div class="form-group">
+							  <label for="inputPassword" class="col-lg-2 control-label">Full Name</label>
+							  <div class="col-lg-10"> 
+								<input class="form-control" id="inputPassword" placeholder="Enter Full Name" value="<?=$FetchUser['FullName'];?>" type="text" name="fullname" maxlength="100" required>
+							   </div>
+							</div>
+     
+							<div class="form-group">
+							  <label for="inputPassword" class="col-lg-2 control-label">Mobile</label>
+							  <div class="col-lg-10">
+								<input class="form-control" id="inputPassword" pattern="[0-9]{10}" placeholder="Enter Valid Mobile Number" value="<?=$FetchUser['Mobile'];?>" type="text" name="mobile" maxlength="10" required>
+							  </div>
+							</div>
+							
+							<div class="form-group">
+							  <label for="inputPassword" class="col-lg-2 control-label">Email</label>
+							  <div class="col-lg-10">
+								<input class="form-control" id="inputPassword" placeholder="Enter Valid Email" type="email" value="<?=$FetchUser['Email'];?>" name="email" maxlength="50" required>
+								</div>
+							</div>
+	
+							<div class="form-group">
+							  <label for="inputPassword" class="col-lg-2 control-label">Address</label>
+							  <div class="col-lg-10"> 
+								<input class="form-control" id="inputPassword" placeholder="House#//Building Name//lane//area//taluka//district//state//PINCODE" value="<?=$FetchUser['Address'];?>" type="text" name="address" maxlength="1000" required>
+								 </div>
+							</div>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  Premium Wordpress Themes
+              </a>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <legend><hr>Product <strong>Details</strong> <hr></legend>
+			  Item Name<?=$Fetchrate['productname'];?>
+			  Item Material<?=$Fetchrate['productmaterial'];?>
+			  Price Rs.<?=$Fetchrate['productrate'];?>
+			  Discount Rs.<?=$Fetchrate['discount'];?>
+			  Selling Price Rs.<?=$Fetchrate['productsellingprice'];?>
+			  Mode Of Payment: Cash On Delivery
+          </div>
+      </div>
+  </div>
+  <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+          PSD2XHTML Conversion
+      </a>
+  </div>
+  <div id="collapseThree" class="accordion-body collapse">
+    <div class="accordion-inner">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span5 cp">
+                &copy; 2016 NFCC </a>. All Rights Reserved. | Made In India
+            </div>
+            <!--/Copyright-->
+
+            <div class="span6">
+                <ul class="social pull-right">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>                      
+                   </ul>
+            </div>
+
+            <div class="span1">
+                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+            </div>
+            <!--/Goto Top-->
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+<script src="js/vendor/jquery-1.9.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
